@@ -1,0 +1,7 @@
+
+security:
+  oauth2:  
+    resource:
+     # userInfoUri: ${oidc.server.url}/protocol/openid-connect/userinfo
+      jwk:
+        key-set-uri: http://52.87.227.225:8080/auth/realms/master/protocol/openid-connect/certs

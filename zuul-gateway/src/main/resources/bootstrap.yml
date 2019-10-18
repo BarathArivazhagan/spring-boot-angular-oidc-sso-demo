@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active:
+    - keycloak
+oidc:
+  server:
+     url: http://52.87.227.225:8080/auth/realms/master

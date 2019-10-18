@@ -1,0 +1,28 @@
+server:
+   port: 9500
+zuul:
+  routes:
+      user-service:
+          url: http://localhost:8082
+          path: /userms/**
+          strip-prefix: true
+
+management:
+    endpoints:
+       web: 
+          exposure:
+              include: "*"
+
+logging:
+    level: 
+        org.springframework.security: DEBUG
+
+
+security:
+  oauth2:  
+    resource:
+     # userInfoUri: ${oidc.server.url}/protocol/openid-connect/userinfo
+      jwk:
+        key-set-uri: http://18.233.97.196:8080/auth/realms/master/protocol/openid-connect/certs
+      id: demo-app
+         
