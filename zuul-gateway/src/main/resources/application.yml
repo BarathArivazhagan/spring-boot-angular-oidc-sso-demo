@@ -23,6 +23,6 @@ security:
     resource:
      # userInfoUri: ${oidc.server.url}/protocol/openid-connect/userinfo
       jwk:
-        key-set-uri: http://18.233.97.196:8080/auth/realms/master/protocol/openid-connect/certs
+        key-set-uri: http://localhost:8080/auth/realms/master/protocol/openid-connect/certs
       id: demo-app
          
